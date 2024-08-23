@@ -79,6 +79,10 @@ def search_plato(id: int):
     except:
         return{"error": "Plato no encontrado"}
     
-    #git add: paso previo para añadir commit
+    #git add: paso previo para añadir commit 
+    # git add restaurant.py restaurante en especifico
     #git status: para q=saber que archivos hay modificados
     #git commit -m "First commit"
+    # git branch -M main para cambiar de master a main
+    # git remote add origin https://github.com/GeraldMisa27/Aprendiendo-FastAPI.git repositorio local a repositorio remoto
+    # git push -u origin main para subir los cambios y la u es para loguearme
