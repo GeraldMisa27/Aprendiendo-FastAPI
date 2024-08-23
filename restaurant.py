@@ -46,7 +46,7 @@ async def add_plato(plato: Plato):
         return {"error": "el Plato ya existe"}
     else:    
         platillos.append(plato)
-        return {"plato": plato, "error": "el Plato fue añadido exitosamente"}
+        return {"plato": plato, "error": "El Plato fue añadido exitosamente"}
 
 @app.put("/Restaurante/")
 async def update_plato(plato_actualizado: Plato):
@@ -78,3 +78,7 @@ def search_plato(id: int):
         return list(plato_encontrado)[0]
     except:
         return{"error": "Plato no encontrado"}
+    
+    #git add: paso previo para añadir commit
+    #git status: para q=saber que archivos hay modificados
+    #git commit -m "First commit"
